@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<control xmlns:def="Definition" xmlns="http://schemas.sitecore.net/Visual-Studio-Intellisense">
+  <IsFeatured>
+    <FormDialog Header="Change Icon" Submittable="false" Text="Click the new icon that you want to assign to the selected item.">
+
+      <CodeBeside Type="Zerex.Framework.Client.Dialogs.IconFeaturedForm,Zerex.Framework.Client"/>
+      
+      <Script Src="/sitecore/shell/override/Applications/Content Manager/Dialogs/Is Featured/SetFeaturedIcon.js" />
+      <Stylesheet>
+        #TabStrip {
+        padding-bottom: 50px;
+        }
+
+        
+
+        .iconFileName {
+        padding-top: 8px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        }
+      </Stylesheet>
+      <div class="scStretch">
+        <VerticalTabstrip ID="TabStrip">
+          <Tab ID="CustomIconTab" Header="Custom Icons">
+		  <Edit ID="IconFile" Visible="true" />
+            <GridPanel Width="100%" Height="100%">
+			  
+			  <Literal ID="IconFileName" Border="none" GridPanel.Height="5px" />
+              
+			  <Scrollbox ID="CustomIconList" Class="scScrollbox scFixSize scFixSize8 scKeepFixSize" Width="100%" GridPanel.Height="50%" Border="none" Click="javascript:scClick(this,event)"/>
+			  
+			  <Border Width="100%" GridPanel.Height="50px" border="1">
+				<Toolbutton Style="float:right" Icon="office/24x24/delete.png" Header="Remove" ToolTip="Removes entry from selection list" Click="Remove"/>
+				<Toolbutton Icon="office/24x24/document_empty.png" Header="Add Item" ToolTip="Add Item" Click="AddItem"/>
+			  </Border>
+			  
+			  <Scrollbox ID="ItemListBox">
+				<Listview ID="IconList" Width="100%" View="Details">
+				  <ListviewHeader>
+					<ListviewHeaderItem Header="Selected icons:"/>
+				  </ListviewHeader>
+				</Listview>
+			  </Scrollbox>
+            </GridPanel>
+          </Tab>
+        </VerticalTabstrip>
+      </div>
+    </FormDialog>
+  </IsFeatured>
+</control>

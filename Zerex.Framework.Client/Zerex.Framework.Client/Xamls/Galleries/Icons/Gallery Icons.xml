@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<control xmlns:def="Definition" xmlns="http://schemas.sitecore.net/Visual-Studio-Intellisense" xmlns:shell="http://www.sitecore.net/shell">
+  <Gallery.Icons>
+    <Gallery>
+      <CodeBeside Type="Zerex.Framework.Client.Galleries.GalleryIconsFormExtension,Zerex.Framework.Client"/>
+      <Stylesheet Src="/sitecore/shell/Applications/Content Manager/Galleries/Icons/Gallery Icons.css" />
+
+      <div class="scGalleryIconsContainer">
+        <div class="scGalleryIconsScrollboxWrapper" >
+          <Scrollbox ID="Icons" />
+        </div>
+        <div class="scGalleryIconsMore">
+          <GalleryMenu>
+            <MenuItem Header="More Icons" Icon="Core2/16x16/smiley_face2.png" Click="item:selecticon" />
+          </GalleryMenu>
+        </div>
+        <div class="scGalleryIconsGrip">
+          <Gallery.Grip />
+        </div>
+      </div>
+    </Gallery>
+  </Gallery.Icons>
+</control>
