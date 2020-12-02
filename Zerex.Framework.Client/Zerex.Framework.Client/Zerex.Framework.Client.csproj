@@ -41,6 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\LargeIconButtonExtension.cs" />
+    <Compile Include="Dialogs\IconFeaturedForm.cs" />
+    <Compile Include="Dialogs\SetIconExtensionForm.cs" />
+    <Compile Include="Galleries\GalleryIconsFormExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
