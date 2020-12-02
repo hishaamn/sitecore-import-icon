@@ -1,0 +1,1 @@
+Expand-Archive -Path $uploadResult -DestinationPath "$AppPath\temp\IconCache" -Force

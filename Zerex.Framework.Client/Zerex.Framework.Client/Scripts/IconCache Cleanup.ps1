@@ -1,0 +1,1 @@
+Get-ChildItem -Path "$AppPath\temp\IconCache\$filename" -File -Recurse | Remove-Item -Force -Confirm:$false -Recurse
