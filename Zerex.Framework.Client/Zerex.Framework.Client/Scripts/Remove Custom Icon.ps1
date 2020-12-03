@@ -33,6 +33,10 @@ $filename = $iconItem.Fields["Filename"].Value
 Get-ChildItem -Path "$AppPath\temp\$filename.*" -Recurse | Remove-Item -Force -Confirm:$false
 Get-ChildItem -Path "$AppPath\temp\icons_$filename.*" -Recurse | Remove-Item -Force -Confirm:$false
 
+$params = @{
+    "Filename"=$filename
+}
+
 $scriptPath = "master:/sitecore/system/Modules/PowerShell/Script Library/Zerex/Icons/IconCache Cleanup"
 $scriptItem = Get-Item $scriptPath
 $script = [scriptblock]::Create($scriptItem.Script)
