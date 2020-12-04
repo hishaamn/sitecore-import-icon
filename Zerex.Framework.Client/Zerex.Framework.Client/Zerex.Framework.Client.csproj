@@ -69,5 +69,6 @@
     <Content Include="Xamls\Dialogs\Set Icon\Set Icon.xml" />
     <Content Include="Xamls\Galleries\Icons\Gallery Icons.xml" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
