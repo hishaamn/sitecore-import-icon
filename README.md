@@ -27,7 +27,7 @@ All you need to do is install the icon importer provided in the folder **Release
 
 On Sitecore ribbon, under the Configure Tab, click on the Custom Icon down arrow and select **Import**. Fill in the different input. Note for the Filename entry, it should match the file name you are uploading without the extension.
 
-<img src="docs/import.png" width="50%">
+<img src="docs/import.PNG" width="50%">
 
 ## Update Custom Icons
 
@@ -39,4 +39,4 @@ When you select the update custom icon, you specify the name of the file to be u
 
 When you select the remove custom icon, you just select what custom icon you want to remove and then it will cleanup the directories and IconCache where the custom icons are present.
 
-<img src="docs/remove.png" width="50%">
+<img src="docs/remove.PNG" width="50%">
