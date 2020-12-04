@@ -46,7 +46,6 @@
     <Compile Include="Dialogs\SetIconExtensionForm.cs" />
     <Compile Include="Galleries\GalleryIconsFormExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utilities\FileUtility.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Sitecore.Client">
