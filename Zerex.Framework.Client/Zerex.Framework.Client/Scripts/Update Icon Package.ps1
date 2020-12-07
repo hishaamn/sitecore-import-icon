@@ -10,6 +10,14 @@
         @{ Name = "unzip"; Value=$false; Title="Unzip file"; Tooltip="Tick to unzip the file"; Editor="checkbox"; },
 		@{ Name = "isFeatured"; Value=$false; Title="Is Featured"; Tooltip="Tick to add to Featured List"; Editor="checkbox"; }
     )
+	
+	Validator = {		
+		$filename = Get-ChildItem -Path "master:/sitecore/system/Modules/Custom Icons" -recurse | Where-Object { $_.Fields["Filename"].Value -eq $variables.filename.Value }
+
+		if($filename.Count -eq 0){
+			$variables.filename.Error = "No package with name $($variables.filename.Value) exists."
+		}
+    }
 }
 
 $result = Read-Variable @dialogProps
